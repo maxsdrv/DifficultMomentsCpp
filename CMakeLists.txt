@@ -3,4 +3,4 @@ project(DifficultMomentsCpp)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(DifficultMomentsCpp main.cpp)
+add_executable(DifficultMomentsCpp main.cpp Matrix.cpp Matrix.h Iterator.h Iterator.cpp)
