@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package Entity;
+
+message FullName {
+  Entity.FullName fullname = 1;
+  string firstName = 2;
+  string lastName = 3;
+  optional string patronymic = 4;
+}
+
+message Student {
+  Entity.Student student = 1;
+  FullName fullname = 2;
+  repeated int32 arrayRatings = 3;
+  int32 average = 4;
+}
+
+message StudentsGroup {
+  Entity.StudentsGroup students_group = 1;
+  repeated Student arrayStudents = 2;
+}
